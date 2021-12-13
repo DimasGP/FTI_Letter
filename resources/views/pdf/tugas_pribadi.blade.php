@@ -33,7 +33,7 @@
                     <font size="5"><b>FAKULTAS TEKNOLOGI INFORMASI</b></font><br>
 					<font size="4">SUART TUGAS PRIBADI 2021</font><br>
                     <font size="3">NO SURAT : {{ $item->no_surat }}</font><br>
-					<font size="2"><i>Jalan.dr.Wahidin Sudirohusodo no. 5-25 Yogyakarta, Indonesia – 55224 </i></font>
+					<font size="2"><i>Jl.dr.Wahidin Sudirohusodo no. 5-25 Yogyakarta, Indonesia – 55224 </i></font>
 				</center>
 				</td>
 			</tr>
