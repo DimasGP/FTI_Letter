@@ -33,7 +33,7 @@
                     <font size="5"><b>FAKULTAS TEKNOLOGI INFORMASI</b></font><br>
 					<font size="4">SUART TUGAS PRIBADI 2021</font><br>
                     <font size="3">NO SURAT : {{ $item->no_surat }}</font><br>
-					<font size="2"><i>Jln roma No. 02 Kode Pos : 68173 Telp./Fax (0331)758005 Yogyakarta</i></font>
+					<font size="2"><i>Jl. dr. Wahidin Sudirohusodo no. 5-25 Yogyakarta, Indonesia – 55224 </i></font>
 				</center>
 				</td>
 			</tr>
@@ -48,10 +48,6 @@
 		</table>
 		</table>
 		<table>
-			<tr class="text2">
-				<td>Nomer</td>
-				<td width="572">: {{ $item->no_surat }}</td>
-			</tr>
 			{{-- <tr>
 				<td>Perihal</td>
 				<td width="564">: -</td>
