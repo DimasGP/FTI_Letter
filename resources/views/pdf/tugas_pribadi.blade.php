@@ -26,12 +26,12 @@
 	<center>
 		<table style="width: 100%">
 			<tr>
-				<td><img src="" width="90" height="90"></td>
+				<td><img src="logo fti.png" width="90" height="90"></td>
 				<td>
 				<center>
                     <font size="3"><b>UNIVERSITAS KRISTEN DUTA WACANA</b></font><br>
                     <font size="5"><b>FAKULTAS TEKNOLOGI INFORMASI</b></font><br>
-					<font size="4">SUART TUGAS PRIBADI 2021</font><br>
+					<font size="4">SURAT TUGAS PRIBADI 2021</font><br>
                     <font size="3">NO SURAT : {{ $item->no_surat }}</font><br>
 					<font size="2"><i>Jl.dr.Wahidin Sudirohusodo no. 5-25 Yogyakarta, Indonesia – 55224 </i></font>
 				</center>
@@ -53,11 +53,11 @@
 				<td width="564">: -</td>
 			</tr> --}}
 		</table>
-		
+
 		<table width="625">
 			<tr>
 		       <td>
-			       <font size="2"><br>Dengan ini Dekan Fakultas teknologi Informasi Universitas Kristen Duta Wacana memberikan tugas kepada para mahasiswa/i <br>di bawah ini ;</font>
+			       <font size="2"><br>Dengan ini Dekan Fakultas teknologi Informasi Universitas Kristen Duta Wacana memberikan tugas kepada para mahasiswa/i <br>di bawah ini :</font>
 		       </td>
 		    </tr>
 		</table>
@@ -70,25 +70,35 @@
 		</table>
 		</table>
 		<table>
-			<tr class="text2">
+        {{--<tr class="text2">
 				<td>Tanggal</td>
 				<td width="541">: <b>{{ Carbon\Carbon::parse($item->tanggal_pelaksanaan)->format('d M Y') }}</b></td>
 			</tr>
-			{{-- <tr>
+			 <tr>
 				<td>Jam</td>
 				<td width="525">: <b> 08:30 </b></td>
-			</tr> --}}
+			</tr>
 			<tr>
 				<td>Tempat</td>
 				<td width="525">: <b> {{ $item->lokasi_pelaksanaan }} </b></td>
+			</tr>
+            --}}
+            <tr>
+				<td>Nama</td>
+				<td width="525">: <b> {{ $item->user->nama }} </b></td>
+			</tr>
+            <tr>
+				<td>NIM</td>
+				<td width="525">: <b> {{ $item->user->no_induk }} </b></td>
 			</tr>
 		</table>
 		<br>
 		<table width="625">
 			<tr>
 		       <td>
-			       <font size="2">Dimikian surat tugas ini di buat agar di pergunakan sebagaimana perlunya, Kepada penerima tugas selesai menerima tugas dimohon <br>menyampaikan laporan kepada pemberi tugas.
-</font>
+			       <font size="2">Demikian surat tugas ini di buat agar di pergunakan sebagaimana perlunya,
+                       kepada penerima tugas selesai menerima tugas dimohon <br>menyampaikan laporan kepada pemberi tugas.
+                    </font>
 		       </td>
 		    </tr>
 		</table>
