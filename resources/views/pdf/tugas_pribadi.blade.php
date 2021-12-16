@@ -26,42 +26,46 @@
 	<center>
 		<table style="width: 100%">
 			<tr>
-				<td><img src="" width="90" height="90"></td>
-				<td>
+				<td><img src="surat.png" width="500" height="130"></td>
+				<!--<td>
 				<center>
                     <font size="3"><b>UNIVERSITAS KRISTEN DUTA WACANA</b></font><br>
                     <font size="5"><b>FAKULTAS TEKNOLOGI INFORMASI</b></font><br>
-					<font size="4">SUART TUGAS PRIBADI 2021</font><br>
+					<font size="4">SURAT TUGAS PRIBADI 2021</font><br>
                     <font size="3">NO SURAT : {{ $item->no_surat }}</font><br>
-					<font size="2"><i>Jln roma No. 02 Kode Pos : 68173 Telp./Fax (0331)758005 Yogyakarta</i></font>
+					<font size="2"><i>Jl. Dr.Wahidin Sudirohusodo No. 5-25 Yogyakarta, Indonesia – 55224 </i></font>
 				</center>
-				</td>
+				</td>-->
 			</tr>
-			<tr>
+			<!--<tr>
 				<td colspan="2"><hr></td>
-			</tr>
+			</tr>-->
 		<table style="width : 100%">
 			<tr>
-                <td></td>
-				<td class="text2">Yogyakarta, {{ Carbon\Carbon::parse($item->created_at)->format('d M Y') }}</td>
+                <td>
+                    <center>
+                        <b><font size="4">Surat Tugas</font></b><br>
+                        <font size="3">No : {{ $item->no_surat }}</font>
+                    </center>
+
+                </td>
 			</tr>
 		</table>
 		</table>
 		<table>
-			<tr class="text2">
-				<td>Nomer</td>
-				<td width="572">: {{ $item->no_surat }}</td>
+			<tr>
+				<td>
+                    Kepada,
+				    <br> {{ $item->kepada }}
+                    <br> {{ $item->alamat }}
+                </td>
 			</tr>
-			{{-- <tr>
-				<td>Perihal</td>
-				<td width="564">: -</td>
-			</tr> --}}
 		</table>
-		
+
 		<table width="625">
 			<tr>
 		       <td>
-			       <font size="2"><br>Dengan ini Dekan Fakultas teknologi Informasi Universitas Kristen Duta Wacana memberikan tugas kepada para mahasiswa/i <br>di bawah ini ;</font>
+			       <font size="2"><br>Dengan ini Dekan Fakultas teknologi Informasi Universitas Kristen Duta Wacana memberikan tugas kepada para mahasiswa/i <br>di bawah ini :</font>
 		       </td>
 		    </tr>
 		</table>
@@ -74,25 +78,22 @@
 		</table>
 		</table>
 		<table>
-			<tr class="text2">
-				<td>Tanggal</td>
-				<td width="541">: <b>{{ Carbon\Carbon::parse($item->tanggal_pelaksanaan)->format('d M Y') }}</b></td>
+            <tr>
+				<td>Nama</td>
+				<td width="525">: <b> {{ $item->user->nama }} </b></td>
 			</tr>
-			{{-- <tr>
-				<td>Jam</td>
-				<td width="525">: <b> 08:30 </b></td>
-			</tr> --}}
-			<tr>
-				<td>Tempat</td>
-				<td width="525">: <b> {{ $item->lokasi_pelaksanaan }} </b></td>
+            <tr>
+				<td>NIM</td>
+				<td width="525">: <b> {{ $item->user->no_induk }} </b></td>
 			</tr>
 		</table>
 		<br>
 		<table width="625">
 			<tr>
 		       <td>
-			       <font size="2">Dimikian surat tugas ini di buat agar di pergunakan sebagaimana perlunya, Kepada penerima tugas selesai menerima tugas dimohon <br>menyampaikan laporan kepada pemberi tugas.
-</font>
+			       <font size="2">Demikian surat tugas ini di buat agar di pergunakan sebagaimana perlunya,
+                       kepada penerima tugas selesai menerima tugas dimohon <br>menyampaikan laporan kepada pemberi tugas.
+                    </font>
 		       </td>
 		    </tr>
 		</table>

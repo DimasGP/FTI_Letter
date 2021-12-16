@@ -7,22 +7,15 @@
     <title>Surat Daftar Hadir</title>
 </head>
 <body>
+   <img src="surat.png" width="500" height="130"><br>
+   <center>
     <h3>DAFTAR HADIR</h3>
-    <p>
-        Program Studi SISTEM INFORMASI Fakultas Teknologi Informasi
-    </p>
-    <p>
-        Universitas Kristen Duta Wacana
-    </p>
-    <p>Jln.Dr. Wahidin Sudirohusodo 5-25 Yogyakarta</p>
-    <p>
-        Telp. 0274563929 ext 321, 322
-    </p>
+    
     <p>
         No Surat : {{ $item->kode_surat }}
     </p>
-
-    <table style="width: 80%">
+</center>
+    <table style="width: 60%">
         <tr>
             <td>Nama Kegiatan</td>
             <td>:</td>
@@ -48,9 +41,10 @@
             <td>:</td>
             <td>{{ $item->pembicara }}</td>
         </tr>
+   
     </table>
 
-    <table border="4" style="width: 100%">
+    <table border="1" style="width: 100%">
         <thead>
             <tr>
                 <th scope="col" >No</th>
@@ -61,7 +55,7 @@
         </thead>
         <tbody>
             @for ($i = 1; $i <= $item->jumlah_peserta; $i++)
-                <tr style="line-height: 40px">
+                <tr style="line-height: 25px">
                     <th>{{ $i }}</th>
                     <td></td>
                     <td></td>

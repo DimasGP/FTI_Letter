@@ -13,6 +13,7 @@
         <div class="card-body">
             <table class="table">
                 <thead class="dark">
+                    
                     <tr>
                         <th scope="col">Kode Surat</th>
                         <th scope="col">Nama Kegiatan</th>
