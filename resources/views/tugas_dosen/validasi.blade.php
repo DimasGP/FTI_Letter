@@ -7,7 +7,7 @@
                 Validasi Surat Dosen
             </span>
             <span>
-                <a href="{{ route('surat_dosen.index') }}" class="btn btn-danger">Kembali</a>
+                <a href="{{ route('tugas_dosen.index') }}" class="btn btn-danger">Kembali</a>
             </span>
         </div>
         <div class="card-body">
