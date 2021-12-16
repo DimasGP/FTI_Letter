@@ -84,7 +84,7 @@
                             Belum Ada Data
                         </td>
                     </tr>
-                        
+
                     @endforelse
                 </tbody>
             </table>

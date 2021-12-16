@@ -76,16 +76,16 @@
                                     Belum Ada Data
                                 </td>
                             </tr>
-                                
+
                             @endforelse
                         </tbody>
                     </table>
                 </div>
                 <div class="card-footer clearfix">
                     <ul class="pagination pagination-sm m-0 float-right">
-        
+
                         {{ $pribadis    ->links('vendor.bootstrap-4') }}
-        
+
                     </ul>
                 </div>
             </div>
@@ -167,16 +167,16 @@
                                     Belum Ada Data
                                 </td>
                             </tr>
-                                
+
                             @endforelse
                         </tbody>
                     </table>
                 </div>
                 <div class="card-footer clearfix">
                     <ul class="pagination pagination-sm m-0 float-right">
-        
+
                         {{ $kelompoks    ->links('vendor.bootstrap-4') }}
-        
+
                     </ul>
                 </div>
             </div>
@@ -248,16 +248,16 @@
                                     Belum Ada Data
                                 </td>
                             </tr>
-                                
+
                             @endforelse
                         </tbody>
                     </table>
                 </div>
                 <div class="card-footer clearfix">
                     <ul class="pagination pagination-sm m-0 float-right">
-        
+
                         {{ $acaras    ->links('vendor.bootstrap-4') }}
-        
+
                     </ul>
                 </div>
             </div>
@@ -331,16 +331,16 @@
                                     Belum Ada Data
                                 </td>
                             </tr>
-                                
+
                             @endforelse
                         </tbody>
                     </table>
                 </div>
                 <div class="card-footer clearfix">
                     <ul class="pagination pagination-sm m-0 float-right">
-        
+
                         {{ $dosens    ->links('vendor.bootstrap-4') }}
-        
+
                     </ul>
                 </div>
             </div>
@@ -385,7 +385,7 @@
                                         {{$item->tempat}}
                                     </td>
                                     <td>
-                                        {{$item->pembicara}} 
+                                        {{$item->pembicara}}
                                     </td>
                                     <td>
                                         <span class="badge badge-success">{{$item->status}}</span>
@@ -420,16 +420,16 @@
                                     Belum Ada Data
                                 </td>
                             </tr>
-                                
+
                             @endforelse
                         </tbody>
                     </table>
                 </div>
                 <div class="card-footer clearfix">
                     <ul class="pagination pagination-sm m-0 float-right">
-        
+
                         {{ $hadirs    ->links('vendor.bootstrap-4') }}
-        
+
                     </ul>
                 </div>
             </div>

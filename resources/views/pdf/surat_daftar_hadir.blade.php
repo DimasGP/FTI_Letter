@@ -9,12 +9,9 @@
 <body>
    <img src="surat.png" width="500" height="130"><br>
    <center>
-    <h3>DAFTAR HADIR</h3>
-    
-    <p>
-        No Surat : {{ $item->kode_surat }}
-    </p>
-</center>
+        <b><font size="4">Surat Kerjasama</font><br>
+        <font size="3">No : {{ $item->kode_surat }}</font><br></b>
+    </center>
     <table style="width: 60%">
         <tr>
             <td>Nama Kegiatan</td>
@@ -41,7 +38,7 @@
             <td>:</td>
             <td>{{ $item->pembicara }}</td>
         </tr>
-   
+
     </table>
 
     <table border="1" style="width: 100%">

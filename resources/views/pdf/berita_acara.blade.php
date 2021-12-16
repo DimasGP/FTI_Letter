@@ -26,27 +26,27 @@
 	<center>
 		<table style="width: 100%">
 			<tr>
-				<td><img src="" width="90" height="90"></td>
+				<td><img src="surat.png" width="500" height="130"></td>
 				<td>
-				<center>
+				<!--<center>
                     <font size="3"><b>UNIVERSITAS KRISTEN DUTA WACANA</b></font><br>
                     <font size="5"><b>FAKULTAS TEKNOLOGI INFORMASI</b></font><br>
 					<font size="2"><i>Jl. dr. Wahidin Sudirohusodo no. 5-25 Yogyakarta, Indonesia – 55224</i></font>
-				</center>
+				</center>-->
 				</td>
 			</tr>
-			<tr>
+			<!--<tr>
 				<td colspan="2"><hr></td>
-			</tr>
+			</tr>-->
 		</table>
 		<table>
 			<tr class="text2">
 				<td></td>
                 <center>
-                    
-					<font size="4">BERITA ACARA 2021</font><br>
-                    <font size="3">NO SURAT : {{ $item->no_surat }}</font><br>
-				
+
+					<b><font size="4">Berita Acara</font><br>
+                    <font size="3">No : {{ $item->no_surat }}</font><br></b>
+
 				</center>
 				<td></td>
 			</tr>
@@ -75,26 +75,22 @@
 		<table>
             <tr>
 				<td>Acara</td>
-				<td width="525">: <b> {{ $item->judul }} </b></td>
+				<td width="525">: {{ $item->judul }}</td>
 			</tr>
 			<tr class="text2">
 				<td>Tanggal</td>
-				<td width="541">: <b>{{ Carbon\Carbon::parse($item->tanggal)->format('d M Y') }}</b></td>
+				<td width="541">: {{ Carbon\Carbon::parse($item->tanggal)->format('d M Y') }}</td>
 			</tr>
-			{{-- <tr>
-				<td>Jam</td>
-				<td width="525">: <b> 08:30 </b></td>
-			</tr> --}}
             <tr>
 				<td>Keterangan</td>
-				<td width="525">: <b> {{ $item->keterangan }} </b></td>
+				<td width="525">: {{ $item->keterangan }} </td>
 			</tr>
 		</table>
 		<br>
 		<table width="625">
 			<tr>
 		       <td>
-			       <font size="2">Dimikian Berita Acara ini di buat dengan sebenarnya, untuk dapat digunakan sebagaimana mestinya.
+			       <font size="2">Demikian Berita Acara ini di buat dengan sebenarnya, untuk dapat digunakan sebagaimana mestinya.
 </font>
 		       </td>
 		    </tr>
@@ -103,6 +99,12 @@
         <br>
 		{{-- {{$item->sign->signs}} --}}
 		{{-- <img src="{{ public_path('upload/'. $item->sign->signs) }}" alt=""> --}}
+        <table style="width : 100%">
+			<tr>
+                <td></td>
+				<td class="text2">Yogyakarta, {{ Carbon\Carbon::parse($item->created_at)->format('d M Y') }}</td>
+			</tr>
+		</table>
 		<table style="width: 100%">
 			<tr>
 				<td width="330"></td>
@@ -112,12 +114,6 @@
                     <br><br><br><br>{{ $item->sign->user->nama }}</td>
 			</tr>
 	     </table>
-         <table style="width : 100%">
-			<tr>
-                <td></td>
-				<td class="text2">Yogyakarta, {{ Carbon\Carbon::parse($item->created_at)->format('d M Y') }}</td>
-			</tr>
-		</table>
-	</center>
+
 </body>
 </html>
