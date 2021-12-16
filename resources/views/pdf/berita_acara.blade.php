@@ -33,7 +33,7 @@
                     <font size="5"><b>FAKULTAS TEKNOLOGI INFORMASI</b></font><br>
 					<font size="4">BERITA ACARA 2021</font><br>
                     <font size="3">NO SURAT : {{ $item->no_surat }}</font><br>
-					<font size="2"><i>Jln roma No. 02 Kode Pos : 68173 Telp./Fax (0331)758005 Yogyakarta</i></font>
+					<font size="2"><i>Jl roma No. 02 Kode Pos : 68173 Telp./Fax (0331)758005 Yogyakarta</i></font>
 				</center>
 				</td>
 			</tr>
