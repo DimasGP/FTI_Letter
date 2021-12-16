@@ -37,31 +37,48 @@
 				</center>
 				</td>-->
 			</tr>
-			<tr>
-				<td colspan="2"><hr></td>
-			</tr>
-
 		</table>
+
 		<table>
-			{{--<tr class="text2">
-				<td>Nomer</td>
-				<td width="572">: {{ $item->no_surat }}</td>
+        <table>
+            <tr class="text2">
+                    <td></td>
+                    <center>
+
+                        <b><font size="4">Surat Tugas Dosen</font><br>
+                        <font size="3">No : {{ $item->no_surat }}</font><br></b>
+
+                    </center>
+                    <td></td>
 			</tr>
-			 <tr>
-				<td>Perihal</td>
-				<td width="564">: -</td>
-			</tr> --}}
+        </table>
 		</table>
 
+     <!--   <table>
+			<tr>
+				<td>
+                    Kepada,
+				    <br> {{ $item->kepada }}
+                    <br> {{ $item->alamat }}
+                </td>
+			</tr>
+		</table>
+    -->
 		<table width="625">
 			<tr>
 		       <td>
-			       <font size="2"><br>Dengan ini Dekan Fakultas teknologi Informasi Universitas Kristen Duta Wacana memberikan tugas kepada </font>
+                       <font center><br>Sehubungan dengan kegiatan MBKM (Merdeka Belajar Kampus Merdeka) terkait kerjasama dengan pihak Rumah
+                        Panti Rapih <br>Yogyakarta, maka dari itu kami dari FTI UKDW mengutus salah satu dosen FTI UKDW untuk ikut turut dalam rapat internal<br>
+                        dalam proses pembangunan aplikasi mobile RS Panti Rapih. Berikut ini dosen yang akan ikut serta dalam kegiatan tersebut. </font>
 		       </td>
 		    </tr>
+        </table>
+        <table>
             <tr>
-                <td>Nama : {{ $item->user->nama }}</td>
-            </tr>
+                <td>Nama : {{ $item->user->nama }}<br>
+				NIK : {{ $item->user->no_induk }}</td>
+			</tr>
+
 		</table>
         <table width="625">
 			<tr>
@@ -71,7 +88,7 @@
 		    </tr>
 		</table>
 		</table>
-		<table>
+		<!--<table>
 			<tr class="text2">
 				<td>Tanggal</td>
 				<td width="541">: <b>{{ Carbon\Carbon::parse($item->tanggal_pelaksanaan)->format('d M Y') }}</b></td>
@@ -84,12 +101,12 @@
 				<td>Tempat</td>
 				<td width="525">: <b> {{ $item->alamat }} </b></td>
 			</tr>
-		</table>
-		<br>
+		</table>-->
+
 		<table width="625">
 			<tr>
 		       <td>
-			       <font size="2">Dimikian surat tugas ini di buat agar di pergunakan sebagaimana perlunya, Kepada penerima tugas selesai menerima tugas dimohon <br>menyampaikan laporan kepada pemberi tugas.
+			       <font size="2">Demikian surat tugas ini di buat agar di pergunakan sebagaimana perlunya.
 </font>
 		       </td>
 		    </tr>
