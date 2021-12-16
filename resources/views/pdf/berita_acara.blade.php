@@ -31,33 +31,32 @@
 				<center>
                     <font size="3"><b>UNIVERSITAS KRISTEN DUTA WACANA</b></font><br>
                     <font size="5"><b>FAKULTAS TEKNOLOGI INFORMASI</b></font><br>
-					<font size="4">BERITA ACARA 2021</font><br>
-                    <font size="3">NO SURAT : {{ $item->no_surat }}</font><br>
-					<font size="2"><i>Jln roma No. 02 Kode Pos : 68173 Telp./Fax (0331)758005 Yogyakarta</i></font>
+					<font size="2"><i>Jl. dr. Wahidin Sudirohusodo no. 5-25 Yogyakarta, Indonesia – 55224</i></font>
 				</center>
 				</td>
 			</tr>
 			<tr>
 				<td colspan="2"><hr></td>
 			</tr>
-		<table style="width : 100%">
-			<tr>
-                <td></td>
-				<td class="text2">Yogyakarta, {{ Carbon\Carbon::parse($item->created_at)->format('d M Y') }}</td>
-			</tr>
-		</table>
 		</table>
 		<table>
 			<tr class="text2">
-				<td>Nomer</td>
-				<td width="572">: {{ $item->no_surat }}</td>
+				<td></td>
+                <center>
+                    
+					<font size="4">BERITA ACARA 2021</font><br>
+                    <font size="3">NO SURAT : {{ $item->no_surat }}</font><br>
+				
+				</center>
+				<td></td>
 			</tr>
 			{{-- <tr>
 				<td>Perihal</td>
 				<td width="564">: -</td>
 			</tr> --}}
+
 		</table>
-		
+
 		<table width="625">
 			<tr>
 		       <td>
@@ -74,6 +73,10 @@
 		</table>
 		</table>
 		<table>
+            <tr>
+				<td>Acara</td>
+				<td width="525">: <b> {{ $item->judul }} </b></td>
+			</tr>
 			<tr class="text2">
 				<td>Tanggal</td>
 				<td width="541">: <b>{{ Carbon\Carbon::parse($item->tanggal)->format('d M Y') }}</b></td>
@@ -82,16 +85,16 @@
 				<td>Jam</td>
 				<td width="525">: <b> 08:30 </b></td>
 			</tr> --}}
-			<tr>
-				<td>Acara</td>
-				<td width="525">: <b> {{ $item->judul }} </b></td>
+            <tr>
+				<td>Keterangan</td>
+				<td width="525">: <b> {{ $item->keterangan }} </b></td>
 			</tr>
 		</table>
 		<br>
 		<table width="625">
 			<tr>
 		       <td>
-			       <font size="2">Dimikian surat tugas ini di buat agar di pergunakan sebagaimana perlunya.
+			       <font size="2">Dimikian Berita Acara ini di buat dengan sebenarnya, untuk dapat digunakan sebagaimana mestinya.
 </font>
 		       </td>
 		    </tr>
@@ -109,6 +112,12 @@
                     <br><br><br><br>{{ $item->sign->user->nama }}</td>
 			</tr>
 	     </table>
+         <table style="width : 100%">
+			<tr>
+                <td></td>
+				<td class="text2">Yogyakarta, {{ Carbon\Carbon::parse($item->created_at)->format('d M Y') }}</td>
+			</tr>
+		</table>
 	</center>
 </body>
 </html>
